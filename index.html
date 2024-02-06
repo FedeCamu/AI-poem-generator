@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link rel="stylesheet" href="src/style.css" />
+    
     
     <title>AI Italian Poem Generator</title>
 </head>
@@ -15,18 +18,19 @@
         </header>
 
         <main>            
-            <form>
-                <input type="text" placeholder="Enter the topic of your AI Italian poem" autofocus required autocomplete="off" class="instructions"/>
+            <form id="poem-generator-form">
+                <input 
+                type="text" 
+                placeholder="Enter the topic of your AI Italian poem" 
+                autofocus 
+                required 
+                autocomplete="off" 
+                class="instructions"
+                id="user-instructions"/>
                 <input type="submit" class="submit-button"/>
             </form>            
 
-            <div class="poem">
-                Per me si va nella città dolente,
-                <br>
-                per me si va nell’eterno dolore,
-                <br>
-                per me si va tra la perduta gente.
-
+            <div class="poem" id="poem">           
             </div>
         </main>
 

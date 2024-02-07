@@ -20,11 +20,15 @@ h1{
     color: #38598b;
 }
 
-form{
+.form-container{
     background-color: #fff;
+    margin-bottom: 30px;
     padding: 15px 20px;
     border-radius: 10px;
-    box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
+    box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08); 
+}
+
+form{  
     display: flex;  
 }
 
@@ -50,6 +54,14 @@ form{
 
 }
 
+.hint{
+    line-height: 1.5;
+    margin-top: 5px;
+    font-size: 12px;
+    opacity:0.6;
+    
+}
+
 .poem{
     margin-top: 40px;
     font-size: 16px;
@@ -64,6 +76,20 @@ form{
     color: #38598b;
 
 }
+
+.hidden {
+    display: none;
+}
+
+.blink {
+  animation: blink-animation 1s steps(5, start) infinite;
+  }
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+
 
 footer {
   text-align: center;
